@@ -1,0 +1,22 @@
+.header-payroll{
+    color: #2955DC;
+    font-weight: bolder;
+}
+.header-layout{
+        display: flex;
+        width: 100%;
+        position: fixed;
+        top: 0; /* Nổi lên trên cùng */
+        left: 0; /* Cố định ở góc trái */
+        width: 100%; /* Chiều rộng 100% */
+        background-color: #333; /* Màu nền */
+        padding: 10px; /* Khoảng cách lề */
+        z-index: 999;
+}
+.homepage-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Canh giữa theo chiều dọc */
+    margin-top: 200px   ;
+}
