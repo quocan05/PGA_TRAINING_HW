@@ -10,9 +10,13 @@ import {
 } from "../../../services/localStorage";
 import React, { useEffect, useState } from "react";
 import { Rule } from "antd/es/form";
+import { useDispatch } from "react-redux";
+import { fetchUserInfo } from "../../../redux/reducer/userInfoReducer";
+import { AppDispatch } from "../../../redux/store";
 type NotificationPlacement = NotificationArgsProps["placement"];
 
 export const LoginPage = () => {
+  const dispatch = useDispatch<AppDispatch>();
   const validateMessages = {
     required: "${label} is required!",
     types: {
@@ -42,6 +46,7 @@ export const LoginPage = () => {
         "Wait a second to go home !",
         "bottomLeft"
       );
+      await dispatch(fetchUserInfo());
       setTimeout(() => {
         navigate("/");
       }, 2000);

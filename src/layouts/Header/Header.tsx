@@ -41,7 +41,9 @@ export const HeaderHome = () => {
         >
           Payroll
         </Button>
-        <Button type="primary">Profile</Button>
+        <Button type="primary" onClick={() => navigate("profile")}>
+          Profile
+        </Button>
 
         <Button
           type="primary"

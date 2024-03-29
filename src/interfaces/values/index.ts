@@ -39,6 +39,17 @@ export interface ISignUpParams {
   state: string;
 }
 
+export interface IInfoUser {
+  id: number;
+  email: string;
+  name: string;
+  gender: string;
+  avatar: string;
+  region: number;
+  state: number;
+  description: null | string;
+}
+
 export interface ILocationParams {
   id: string | number;
   name: string;
@@ -56,3 +67,8 @@ export type PropsSignUp = {
 };
 
 export type NotificationType = "success" | "info" | "warning" | "error";
+
+
+export interface UploadAvatarProps {
+  setBase64Image: (base64Image: string) => void;
+}

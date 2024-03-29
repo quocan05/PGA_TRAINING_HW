@@ -11,7 +11,7 @@ import { fetchAllProduct } from "../../redux/reducer/productReducer";
 import { AddProduct } from "../../services/Products";
 import { getLocalStorage } from "../../services/localStorage";
 import { useNavigate } from "react-router";
-
+import "./payrollPage.scss";
 export const PayrollPage = () => {
   const [openModalAddNew, setOpenModalAddNew] = useState(false);
   const [form] = Form.useForm();
@@ -44,7 +44,7 @@ export const PayrollPage = () => {
     }
   }, []);
   return (
-    <>
+    <div className="wrapper-payroll">
       <FilterBar />
       <TableData />
       <Button type="primary" onClick={() => setOpenModalAddNew(true)}>
@@ -75,6 +75,6 @@ export const PayrollPage = () => {
       >
         <FormAddNew form={form}></FormAddNew>
       </ModalAddNew>
-    </>
+    </div>
   );
 };

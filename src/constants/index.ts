@@ -25,8 +25,21 @@ export enum FETCH_PRODUCT {
   BY_ID = "byID",
 }
 
+export enum FETCH_USER_INFORMATION {
+  BY_TOKEN = "byToken",
+}
+
 export enum UPDATE_PRODUCT {
-  UPDATE_1_PRODUCT = 'one_product'
+  UPDATE_1_PRODUCT = "one_product",
+}
+
+export enum API_PGA {
+  DEFAULT = "http://api.training.div3.pgtest.co/",
+ AUTH_LOGIN = "http://api.training.div3.pgtest.co/api/v1/auth/login",
+  AUTH_REGISTER = "http://api.training.div3.pgtest.co/api/v1/auth/register",
+  USER = "http://api.training.div3.pgtest.co/api/v1/user",
+  LOCATION = "http://api.training.div3.pgtest.co/api/v1/location",
+  PRODUCT = "http://api.training.div3.pgtest.co/api/v1/product/",
 }
 
 export const RoutesPath = {

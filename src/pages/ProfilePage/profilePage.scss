@@ -1,0 +1,18 @@
+.wrapper-profile{
+    margin: 30px;
+    .detail-content {
+        width: 70%;
+        height: 500px;
+        // background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */
+        border-radius: 10px; /* Bo góc */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Hiệu ứng đổ bóng nhẹ */
+        margin: 0;
+        padding: 0;
+        background-image: url('../../assets/images/peakpx.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       padding: 20px;
+    }
+
+}

@@ -9,3 +9,6 @@ export const ModalShowDetail: React.FC<CustomModalProps> = (props) => {
 export const ModalAddNew: React.FC<CustomModalProps> = (props) => {
   return <Modal {...props}></Modal>;
 };
+
+
+

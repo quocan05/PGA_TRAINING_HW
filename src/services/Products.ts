@@ -43,16 +43,6 @@ export const AddProduct = async (product: IDataSoucre) => {
 };
 
 export const UpdateProduct = async (product: IDataSoucre) => {
-  // const productPut: IDataSoucre = {
-  //   id: product?.id,
-  //   status: product?.status,
-  //   client: product?.client,
-  //   currency: product?.currency,
-  //   total: product?.total,
-  //   invoice: product?.invoice,
-  //   fundingMethod: product?.fundingMethod,
-  //   order: product?.order,
-  // };
   const url = `http://api.training.div3.pgtest.co/api/v1/product`;
   try {
     return await axios.put(url, product, { headers: AuthHeader });
